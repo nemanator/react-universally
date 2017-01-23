@@ -24,8 +24,9 @@ const cspConfig = {
     scriptSrc: [
       // Allow scripts hosted from our application.
       "'self'",
-      // Allow scripts from cdn.polyfill.io so that we can import the polyfill.
-      'cdn.polyfill.io',
+      "'unsafe-inline'",
+      // Allow scripts from https://cdn.polyfill.io so that we can import the polyfill.
+      'https://cdn.polyfill.io',
       // Note: We will execution of any inline scripts that have the following
       // nonce identifier attached to them.
       // This is useful for guarding your application whilst allowing an inline
