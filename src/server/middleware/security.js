@@ -24,6 +24,7 @@ const cspConfig = {
     scriptSrc: [
       // Allow scripts hosted from our application.
       "'self'",
+      // Add backwards compatibility for browser that don't support nonce.
       "'unsafe-inline'",
       // Allow scripts from https://cdn.polyfill.io so that we can import the polyfill.
       'https://cdn.polyfill.io',
